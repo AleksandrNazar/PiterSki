@@ -11,7 +11,7 @@
 		left: 0;
 		right: 0;
 		transform: translate3d(0, 0, 0);
-		background-color: #33658a;
+		background-color: $bg-color1;
 		box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 		animation-name: header-fix;
 	    animation-duration: 1s;
@@ -56,7 +56,7 @@
 
 .nav__link, .contacts__link {
 	font-size: 18px;
-	color: #fff;
+	color: $text-color;
 	transition: opacity 0.2s linear;
 
 	&:hover {
@@ -65,40 +65,34 @@
 }
 
 .nav-mobile {
+	display: none;
 	width: 100%;
 	position: absolute;
 	top: 100%;
-	left: 0;
-	background-color: #33658a;
-	opacity: 0;
+	right: 0;
+	background-color: $bg-color1;
 	
 
 	&.active {
-		opacity: 1;
+		display: block;
 		animation-name: nav-toggler;
     	animation-duration: 1s;
 
-		@keyframes nav-toggler {
-    		0% {
-        		opacity: 0;
-    		}
+    	@keyframes nav-toggler {
+		    0% {
+		        opacity: 0;
+		        right: -100%;
+		    }
 
-    		100% {
-        		opacity: 1;
-    		}
+		    100% {
+		        opacity: 1;
+		        right: 0;
+		    }
 		}
+		
 	}
 }
 
-@keyframes nav-toggler {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
 
 .nav-mobile__list {
 	text-align: center;
@@ -111,24 +105,11 @@
 
 .nav-mobile__link {
 	font-size: 20px;
-	color: #fff;
+	color: $text-color;
 }
 
 .contacts__link {
 	margin-right: 10px;
-}
-
-.btn {
-	display: inline-block;
-	padding: 8px 20px;
-	font-size: 18px;
-	border-radius: 5px;
-	background-color: #ffc107;
-	transition: background-color 0.2s linear;
-
-	&:hover {
-		background-color: #faa702;
-	}
 }
 
 .nav__toggle {
@@ -137,7 +118,7 @@
 
 .nav__toggle-button {
 	width: 35px;
-	height: 26px;
+	height: 25px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -170,7 +151,11 @@
 
 	.nav__toggle-button {
 		width: 32px;
-		height: 21px;
+		height: 20px;
+
+		& span {
+			height: 2px;
+		}
 	}
 }
 

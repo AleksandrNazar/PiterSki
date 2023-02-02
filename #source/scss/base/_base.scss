@@ -1,6 +1,7 @@
 body {
 	font-family: 'Roboto', sans-serif;
-	color: #333;
+	color: $text-color;
+	background-color: #373737;
 }
 
 .page-wrapper {
@@ -15,8 +16,4 @@ body {
 	max-width: 1230px;
 	margin: 0 auto;
 	padding: 0 15px;
-}
-
-.hidden {
-	display: none;
 }
