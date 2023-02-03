@@ -67,3 +67,6 @@ function showNextSlide(direction) {
     nextSlide.classList.remove('hidden');
     nextSlide.setAttribute('data-active', '');
 }
+
+
+
