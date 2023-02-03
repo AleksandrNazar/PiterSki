@@ -6,6 +6,11 @@
 	
 }
 
+.team-card {
+	border-radius: 20px;
+	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+}
+
 .team__btn {
 	position: absolute;
 	top: 50%;
@@ -13,11 +18,18 @@
 	z-index: 1;
 	background-color: transparent;
 	color: $text-color;
+
+	width: 40px;
+	height: 40px;
+	background-color: $orange;
+	border-radius: 50%;
+
 	font-size: 20px;
-	transition: opacity 0.2s linear;
+	transition: background-color 0.2s linear;
 
 	&:hover {
-		opacity: 0.7;
+		//opacity: 0.7;
+		background-color: #faa702;
 	}
 }
 
@@ -123,5 +135,13 @@
 
 	.team-card__social {
 		font-size: 22px;
+	}
+
+	.team__btn--prev {
+ 		left: -10px;
+}
+
+	.team__btn--next {
+ 		right: -10px;
 	}
 }
