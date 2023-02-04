@@ -545,7 +545,7 @@ body {
   margin-bottom: 30px;
 }
 
-.words__img {
+.brand__img {
   max-width: 100px;
   margin: 0 auto;
 }
@@ -871,14 +871,110 @@ body {
   right: 0;
 }
 
+/*
 .about__img {
-  width: 30%;
+	width: 30%;
+
+	 & img {
+	 	border: 3px solid #33658a;
+		border-radius: 8px;
+	 	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+	 }
+
 }
-.about__img img {
-  border: 3px solid #33658a;
-  border-radius: 8px;
-  -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
-          box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+*/
+.qestions {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(55, 55, 55, 0.3)), to(rgb(55, 55, 55))), url("../img/bg4.jpg");
+  background: linear-gradient(to bottom, rgba(55, 55, 55, 0.3), rgb(55, 55, 55)), url("../img/bg4.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.accordion {
+  margin-bottom: 50px;
+}
+
+.accordion__item.active .accordion__text {
+  display: block;
+}
+.accordion__item.active .accordion__title:after {
+  -webkit-transform: translateY(-50%) rotate(-45deg);
+          transform: translateY(-50%) rotate(-45deg);
+  margin-top: 5px;
+}
+
+.accordion__title {
+  font-size: 20px;
+  letter-spacing: 1px;
+  padding: 15px 50px 15px 0;
+  position: relative;
+  cursor: pointer;
+  border-bottom: 1px solid rgb(255, 255, 255);
+}
+.accordion__title:after {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-top: 2px solid rgb(255, 255, 255);
+  border-right: 2px solid rgb(255, 255, 255);
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  z-index: 1;
+  -webkit-transform: translateY(-50%) rotate(135deg);
+          transform: translateY(-50%) rotate(135deg);
+}
+
+.accordion__text {
+  display: none;
+  font-size: 18px;
+  line-height: 1.4;
+  letter-spacing: 1px;
+  padding: 10px 50px 10px 20px;
+}
+
+@media (max-width: 768px) {
+  .accordion__text {
+    font-size: 16px;
+    padding: 5px 50px 5px 20px;
+  }
+}
+@media (max-width: 576px) {
+  .accordion__title {
+    font-size: 18px;
+  }
+  .accordion__text {
+    font-size: 14px;
+  }
+}
+.contacts__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contacts__items {
+  width: 50%;
+  padding-right: 50px;
+  border-right: 1px solid rgb(255, 255, 255);
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+.contacts__title {
+  font-size: 25px;
+  padding: 0 0 15px 0;
+}
+
+.contacts__text {
+  margin-bottom: 30px;
+}
+
+.contacts__form {
+  width: 50%;
+  padding-left: 50px;
 }
 
 .footer {

@@ -68,5 +68,14 @@ function showNextSlide(direction) {
     nextSlide.setAttribute('data-active', '');
 }
 
+//Accordion 
+const accordionItems = document.querySelectorAll('.accordion__item'); 
+
+accordionItems.forEach(function(item){
+    item.addEventListener('click', function() {
+        this.classList.toggle('active');
+    });
+});
+
 
 
