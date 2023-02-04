@@ -41,7 +41,7 @@
 	width: 100px;
 }
 
-.nav__list, .contacts {
+.nav__list, .connect {
 	display: flex;
 	align-items: center;
 }
@@ -54,7 +54,7 @@
 	}
 }
 
-.nav__link, .contacts__link {
+.nav__link, .connect__link {
 	font-size: 18px;
 	color: $text-color;
 	transition: opacity 0.2s linear;
@@ -108,7 +108,7 @@
 	color: $text-color;
 }
 
-.contacts__link {
+.connect__link {
 	margin-right: 10px;
 }
 
@@ -135,7 +135,7 @@
 
 
 @media(max-width: 768px) {
-	.nav, .contacts {
+	.nav, .connect {
 		display: none;
 	}
 

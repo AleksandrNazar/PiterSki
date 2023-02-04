@@ -52,11 +52,11 @@
                             </li>
                         </ul>
                     </nav>
-                    <div class="contacts">
-                        <a href="#!" class="contacts__link icon-telegram"></a>
-                        <a href="#!" class="contacts__link icon-instagram"></a>
-                        <a href="#!" class="contacts__link icon-vk"></a>
-                        <button class="contacts__btn btn">Звонок</button>
+                    <div class="connect">
+                        <a href="#!" class="connect__link icon-telegram"></a>
+                        <a href="#!" class="connect__link icon-instagram"></a>
+                        <a href="#!" class="connect__link icon-vk"></a>
+                        <button class="connect__btn btn">Звонок</button>
                     </div>
 
                     <div class="nav__toggle">
@@ -349,17 +349,30 @@
                         <div class="contacts__items">
                             <div class="contacts__title">Наши контакты</div>
                             <div class="contacts__text">Вы можете связаться с нами любым удобным способом</div>
-                            <div class="contacts__phone">+7(000)000-00-00</div>
-                            <div class="contacts__email">pst@mail.ru</div> 
-                            <div class="contacts__social">
-                                <a class="contacts__social-link icon-telegram" href="#!"></a>
-                                <a class="contacts__social-link icon-instagram" href="#!"></a>
-                                <a class="contacts__social-link icon-vk" href="#!"></a>
-                            </div>
+                            <div class="contacts__phone icon-phone"> +7(000)000-00-00</div>
+                            <div class="contacts__email icon-envelope2"> pst@mail.ru</div>
+                            <a class="contacts__social-link icon-telegram" href="#!" target="blank"> @piter.ski.tour</a>                       
                         </div>
                         <div class="contacts__form">
                             <div class="contacts__title">Возникли вопросы?</div>
                             <div class="contacts__text">Оставьте заявку — мы свяжемся с вами для уточнения деталей</div>
+                            <form class="form" action="/" method="post">
+                                <div class="form__item">
+                                    <div class="form__input">Ваше имя</div>
+                                    <input class="input" type="text" name="name" maxlength="100">
+                                </div>
+                                <div class="form__item">
+                                    <div class="form__input">Ваш телефон</div>
+                                    <input class="input" type="tel" name="tel" maxlength="100">
+                                </div>
+                                <div class="form__item">
+                                    <input class="checkbox" type="checkbox" name="checkbox1" maxlength="100">
+                                    <label class="checkbox__label" for="checbox1">Я выражаю <a href="#!" target="blank">согласие на передачу и обработку персональных данных</a> в соответствии с <a href="#!" target="blank">Политикой конфиденциальности</a>.</label>
+                                </div>
+                                <div class="form__btn">
+                                    <button class="btn" type="submit">Отправить</button>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -368,7 +381,24 @@
         </main>
 
         <footer class="footer">
-            
+            <div class="container">
+                <div class="footer__block">
+                    
+                    <div class="footer__social">
+                        <a href="#!" class="footer__social-link icon-telegram" target="blank"></a>
+                        <a href="#!" class="footer__social-link icon-instagram" target="blank"></a>
+                        <a href="#!" class="footer__social-link icon-vk" target="blank"></a>
+                    </div>
+
+                    <div class="footer__logo">
+                        <img src="./img/logo-short-white.svg" alt="logo">
+                    </div>
+                    
+                    <div class="footer__copyright">
+                        ©PiterSki Все права защищены
+                    </div>
+                </div>
+            </div>
         </footer>
     </div>
 

@@ -17,10 +17,136 @@
 
 .contacts__text {
 	margin-bottom: 30px;
+	line-height: 1.4;
 	
+}
+
+.contacts__phone {
+	margin-bottom: 30px;
+}
+
+.contacts__email {
+	margin-bottom: 30px;
+}
+
+.contacts__social-link {
+	font-size: 18px;
+	letter-spacing: 1px;
+	color: $text-color;
+	transition: opacity 0.2s linear;
+
+	&:hover {
+		opacity: 0.7;
+	}
 }
 
 .contacts__form {
 	width: 50%;
 	padding-left: 50px;
+	font-size: 18px;
+	letter-spacing: 1px;
 }
+
+.form {
+	padding: 30px;
+	border-radius: 20px;
+	background-color: $bg-color1;
+	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+}
+
+.form__item {
+	margin-bottom: 20px;
+}
+
+.form__input {
+	padding: 5px 0;
+}
+
+.input {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid $text-color;
+	border-radius: 20px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	letter-spacing: 1px;
+	color: $text-color;
+	background-color: transparent;
+	transition: background-color 0.2s linear;
+
+	&:focus {
+		background-color: $bg-color2;
+	}	
+}
+
+.checkbox {
+
+}
+
+.checkbox__label {
+	font-size: 12px;
+	line-height: 1.4;
+
+	& a {
+		color: $text-color;
+		text-decoration: underline;
+		transition: opacity 0.2s linear;
+
+		&:hover {
+			opacity: 0.7;
+		}
+	}
+}
+
+@media(max-width: 992px) {
+	.form__btn {
+		text-align: center;
+	}
+}
+
+@media(max-width: 768px) {
+	.contacts__block {
+		flex-direction: column;
+	}
+
+	.contacts__items {
+		width: 100%;
+		padding-right: 0;
+		border-right: none;	
+		text-align: center;
+		margin-bottom: 60px;
+		font-size: 16px;
+	}
+
+	.contacts__form {
+		width: 100%;
+		padding-left: 0;
+	}
+
+	.contacts__title, .contacts__text {
+		text-align: center;
+	}
+
+	.contacts__title {
+		font-size: 25px;
+	}
+
+	.contacts__text, .contacts__phone, .contacts__email {
+		margin-bottom: 20px;
+	}
+
+	.contacts__text {
+		font-size: 16px;
+	}
+}
+
+@media(max-width: 576px) {
+	.form {
+		padding: 30px 15px;
+	}
+}
+
+
+
+		
+
