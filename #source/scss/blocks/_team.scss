@@ -17,19 +17,21 @@
 	transform: translateY(-50%);
 	z-index: 1;
 	background-color: transparent;
+	
+	/*
 	color: $text-color;
-
 	width: 40px;
 	height: 40px;
 	background-color: $orange;
 	border-radius: 50%;
-
-	font-size: 20px;
+	*/
+	font-size: 40px;
+	color: $orange;
 	transition: background-color 0.2s linear;
 
 	&:hover {
 		//opacity: 0.7;
-		background-color: #faa702;
+		//background-color: #faa702;
 	}
 }
 

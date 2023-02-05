@@ -4,8 +4,10 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>PiterSki</title>
+    <link rel="stylesheet" href="css/swiper-bundle.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/my-icons-font.css">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -16,39 +18,45 @@
             <div class="container">
                 <div class="header__block">
                     <div class="logo">
-                        <a class="logo__link" href="#!">
+                        <a class="logo__link" href="index.html">
                             <img src="./img/logo-short-white.svg" alt="logo-image">
                         </a>
                     </div>
                     <nav class="nav">
                         <ul class="nav__list">
                             <li class="nav__item">
-                                <a class="nav__link" href="#!">О нас</a>
+                                <a class="nav__link active" href="#intro">О нас</a>
                             </li>
                             <li class="nav__item">
-                                <a class="nav__link" href="#!">Туры</a>
+                                <a class="nav__link" href="#team">Команда</a>
                             </li>
                             <li class="nav__item">
-                                <a class="nav__link" href="#!">Отзывы</a>
+                                <a class="nav__link" href="#tours">Туры</a>
                             </li>
                             <li class="nav__item">
-                                <a class="nav__link" href="#!">Контакты</a>
+                                <a class="nav__link" href="#gallery">Галлерея</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="#contacts">Контакты</a>
                             </li>
                         </ul>
                     </nav>
                     <nav class="nav-mobile">
                         <ul class="nav-mobile__list">
                             <li class="nav-mobile__item">
-                                <a class="nav-mobile__link" href="#!">О нас</a>
+                                <a class="nav-mobile__link" href="#intro">О нас</a>
                             </li>
                             <li class="nav-mobile__item">
-                                <a class="nav-mobile__link" href="#!">Туры</a>
+                                <a class="nav-mobile__link" href="#team">Команда</a>
                             </li>
                             <li class="nav-mobile__item">
-                                <a class="nav-mobile__link" href="#!">Отзывы</a>
+                                <a class="nav-mobile__link" href="#tours">Туры</a>
                             </li>
                             <li class="nav-mobile__item">
-                                <a class="nav-mobile__link" href="#!">Контакты</a>
+                                <a class="nav-mobile__link" href="#gallery">Галлерея</a>
+                            </li>
+                            <li class="nav-mobile__item">
+                                <a class="nav-mobile__link" href="#contacts">Контакты</a>
                             </li>
                         </ul>
                     </nav>
@@ -72,7 +80,7 @@
 
         <main class="main">
 
-            <section class="intro">
+            <section class="intro" id="intro">
                 <div class="container">
                     <div class="intro__block">
                         <h1 class="intro__title">Горнолыжные туры по всему миру</h1>
@@ -82,7 +90,7 @@
                 </div>
             </section>
 
-            <section class="tours section">
+            <section class="tours section" id="tours">
                 <div class="container">
                     <h2 class="section__title">Туры 2022 - 2023</h2>
                     <div class="tours__block cards">
@@ -182,14 +190,15 @@
                 </div>
             </section>
 
-            <section class="team section">
+            <section class="team section" id="team">
                 <div class="container">
                     <h2 class="section__title">Наша команда</h2>
                     <div class="team__block">
+
                         <button class="team__btn team__btn--prev icon-chevron-left"></button>
                         <button class="team__btn team__btn--next icon-chevron-right"></button>
 
-                        <div class="team__cards slider">
+                        <div class="team__cards slider">    
                             <div class="team-card">
                                 <div class="team-card__photo">
                                     <img src="./img/about-image.jpg" alt="avatar-photo">
@@ -228,10 +237,10 @@
                                         <a class="icon-vk" href="#!"></a>
                                     </div>
                                 </div>
-                            </div>
                             </div>    
                         </div>
                     </div>
+
                 </div>
             </section>
 
@@ -284,10 +293,10 @@
                 </div>
             </div>
 
-            <section class="gallery section">
+            <section class="gallery section" id="gallery">
                 <div class="container">
                     <h2 class="section__title">Горы ждут тебя!</h2> 
-                    <div class="gallery__block">
+                    <!--<div class="gallery__block">
                         <button class="gallery__btn gallery__btn--prev icon-chevron-left"></button>
                         <button class="gallery__btn gallery__btn--next icon-chevron-right"></button>
                         <div class="gallery__slider">
@@ -295,8 +304,53 @@
                             <img class="hidden" src="./img/gallery/photo2.jpg" alt="photo">
                             <img class="hidden" src="./img/gallery/photo3.jpg" alt="photo">
                         </div>
+                    </div>-->
+                </div>
+                    <!--Slider-->
+                    <div class="gallery-slider swiper-container">
+                        <div class="gallery-slider__wrapper swiper-wrapper">
+                            <div class="gallery-slider__slide swiper-slide">
+                                <div class="gallery-slider__image">
+                                    <img class="swiper-lazy" data-src="./img/gallery/photo1.jpg" src="img/rls-white.png" alt="photo">
+                                    <div class="swiper-lazy-preloader"></div>
+                                </div>
+                            </div>
+                            <div class="gallery-slider__slide swiper-slide">
+                                <div class="gallery-slider__image">
+                                    <img class="swiper-lazy" data-src="./img/gallery/photo2.jpg" src="img/rls-white.png" alt="photo">
+                                    <div class="swiper-lazy-preloader"></div>
+                                </div>
+                            </div>
+                            <div class="gallery-slider__slide swiper-slide">
+                                <div class="gallery-slider__image">
+                                    <img class="swiper-lazy" data-src="./img/gallery/photo3.jpg" src="img/rls-white.png" alt="photo">
+                                    <div class="swiper-lazy-preloader"></div>
+                                </div>
+                            </div>
+                            <div class="gallery-slider__slide swiper-slide">
+                                <div class="gallery-slider__image">
+                                    <img class="swiper-lazy" data-src="./img/gallery/photo4.jpg" src="img/rls-white.png" alt="photo">
+                                    <div class="swiper-lazy-preloader"></div>
+                                </div>
+                            </div>
+                            <div class="gallery-slider__slide swiper-slide">
+                                <div class="gallery-slider__image">
+                                    <img class="swiper-lazy" data-src="./img/gallery/photo5.jpg" src="img/rls-white.png" alt="photo">
+                                    <div class="swiper-lazy-preloader"></div>
+                                </div>
+                            </div>
+                            <div class="gallery-slider__slide swiper-slide">
+                                <div class="gallery-slider__image">
+                                    <img class="swiper-lazy" data-src="./img/gallery/photo6.jpg" src="img/rls-white.png" alt="photo">
+                                    <div class="swiper-lazy-preloader"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
                     </div>
-                </div>      
+                    <!--//Slider-->                      
             </section>
 
             <section class="qestions section">
@@ -342,7 +396,7 @@
                 </div>
             </section>
 
-            <section class="contacts section">
+            <section class="contacts section" id="contacts">
                 <div class="container">
                     <h2 class="section__title">Контакты</h2>
                     <div class="contacts__block">
@@ -402,6 +456,7 @@
         </footer>
     </div>
 
+    <script src="js/swiper-bundle.js"></script>
 	<script src="js/script.js"></script>
 </body>
 </html>                                       

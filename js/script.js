@@ -1,3 +1,5 @@
+"use strict";
+
 //fixed header
 window.onscroll = function headerFix() {
     const header = document.querySelector('.header');
@@ -8,6 +10,20 @@ window.onscroll = function headerFix() {
         header.classList.remove('fixed');
     }
 };
+
+
+//active link
+const navLinks = document.querySelectorAll('.nav__link');
+
+navLinks.forEach(function(links) {
+    links.addEventListener('click', function() {
+        navLinks.forEach(function(link) {
+            link.classList.remove('active');
+        })
+        this.classList.add('active');
+    })
+});
+
 
 //nav menu toggle
 const mobileMenu = document.querySelector('.nav-mobile');
@@ -23,6 +39,7 @@ function navToggler(event) {
 };
 
 //Slider
+
 const slider = document.querySelector('.slider');
 const sliderItems = Array.from(slider.children);
 const btnNext = document.querySelector('.team__btn--next');
@@ -68,6 +85,7 @@ function showNextSlide(direction) {
     nextSlide.setAttribute('data-active', '');
 }
 
+
 //Accordion 
 const accordionItems = document.querySelectorAll('.accordion__item'); 
 
@@ -76,6 +94,46 @@ accordionItems.forEach(function(item){
         this.classList.toggle('active');
     });
 });
+
+//Slider swiper
+new Swiper('.gallery-slider', {
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+    },
+
+    preloadImages: false,
+
+    lazy: {
+        loadOnTransitionStart: false,
+        loadPrevNext: true,
+    },
+
+    loop: true,
+
+    autoplay: {
+        delay: 2000,
+        disablrOnInteraction: true,
+    },
+
+    slidesPerView: 3,
+
+    breakpoints: {
+        320: {
+            slidesPerView: 1,
+        },
+
+        786: {
+            slidesPerView: 2,
+        },
+
+        992: {
+            slidesPerView: 3,
+        },
+    },
+});
+
+
 
 
 

@@ -1,0 +1,30 @@
+.gallery-slider {
+	//border-radius: 20px;
+	
+
+	& .swiper-button-prev:after {
+		color: $orange;
+	}
+
+	& .swiper-button-next:after {
+		color: $orange;
+	}
+}
+
+.gallery-slider__wrapper {
+
+}
+
+.gallery-slider__slide {
+	padding: 0 10px;
+}
+
+.gallery-slider__image {
+	border-radius: 20px;
+	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+
+	& img {
+		border-radius: 20px;
+	}
+}
+
